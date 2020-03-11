@@ -6,7 +6,9 @@ import TitlePage from '../components/TitlePage';
 import LocalizedLink from '../components/LocalizedLink';
 import useTranslations from '../components/useTranslations';
 
+
 import * as S from '../components/ListWrapper/styled';
+
 
 const Index = ({ data: { allMarkdownRemark } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
@@ -20,6 +22,8 @@ const Index = ({ data: { allMarkdownRemark } }) => {
   } = useTranslations();
 
   const postList = allMarkdownRemark.edges;
+  console.log(process.env.DB_HOS);
+
 
   return (
     <div className="homepage">
@@ -52,6 +56,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
               <PostItem
                 slug={`/blog/${slug}`}
                 background={background}
+                key={title}
                 category={category}
                 date={date}
                 timeToRead={timeToRead}

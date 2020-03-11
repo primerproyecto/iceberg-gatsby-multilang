@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby multiple language starter`,
@@ -81,8 +83,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Open Sans`,
+            family: `Baloo Bhai 2`,
             variants: [`400`, `600`],
+          },
+          {
+            family: `Sen`,
+            variants: [`400`, `700`, `800`],
           },
         ],
       },

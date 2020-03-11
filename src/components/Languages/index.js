@@ -15,6 +15,11 @@ const Languages = () => {
           pt-BR
         </S.LanguageLink>
       </S.LanguageItem>
+      <S.LanguageItem>
+        <S.LanguageLink to="/es" hrefLang="es">
+          es-ES
+        </S.LanguageLink>
+      </S.LanguageItem>
     </S.LanguageWrapper>
   );
 };

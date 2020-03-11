@@ -20,4 +20,13 @@ module.exports = {
     defaultTitle: `Gatsby Starter multilingue com CMS`,
     defaultDescription: `Exemplo de Gatsby site usando Markdown, i18n e CMS`,
   },
+  es: {
+    path: `es`,
+    locale: `es-EN`,
+    dateFormat: `DD/MM/YYYY`,
+    siteLanguage: `es`,
+    ogLanguage: `es_EN`,
+    defaultTitle: `Gatsby en español`,
+    defaultDescription: `Exemplo de Gatsby site usando Markdown, i18n e CMS`,
+  },
 }

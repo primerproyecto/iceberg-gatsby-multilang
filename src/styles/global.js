@@ -58,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: var(--body-bg);
     font-weight: 400;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Sen, "Open Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     font-size: 1.5rem;
     line-height: 160%;
@@ -76,9 +76,9 @@ const GlobalStyles = createGlobalStyle`
     color: var(--primaryColor)
   }
 
-  :root { 
-    --gray-extra-light: #eaeaea; 
-    --gray-light: #747d8d;  
+  :root {
+    --gray-extra-light: #eaeaea;
+    --gray-light: #747d8d;
     --gray: #475060;
     --gray-dark: #2e333e;
 
@@ -86,14 +86,14 @@ const GlobalStyles = createGlobalStyle`
     --secondary-color: #2e333e;
     --thirdy-color: #001ff9;
 
-    --body-bg: #FFFFFF; 
+    --body-bg: #FFFFFF;
 
     --bg-light: var(--gray-extra-light);
     --bg-dark: var(--gray-dark);
 
     --border-light: var(--gray-light);
     --border-dark: var(--gray-dark);
-    
+
     --link-color: var(--primary-color);
     --link-color-hover: var(--thirdy-color);
 

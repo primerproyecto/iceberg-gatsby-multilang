@@ -13,6 +13,7 @@ const Navigation = ({ isActive, handleToggleMenu }) => {
       <S.Navigation className={isActive ? 'active' : ''}>
         {menuItems.map(menu => (
           <S.NavigationLink
+            key={menu.name}
             to={menu.link}
             aria-label={menu.name}
             activeClassName="active"
