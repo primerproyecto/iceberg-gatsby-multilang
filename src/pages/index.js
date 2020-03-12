@@ -5,6 +5,7 @@ import PostItem from '../components/PostItem';
 import TitlePage from '../components/TitlePage';
 import LocalizedLink from '../components/LocalizedLink';
 import useTranslations from '../components/useTranslations';
+import BrandsStripe from '../components/BrandsStripe';
 
 
 import * as S from '../components/ListWrapper/styled';
@@ -35,7 +36,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       </h2>
 
       <br />
-
+    <section>
       <S.ListWrapper>
         {postList.map(
           ({
@@ -66,8 +67,11 @@ const Index = ({ data: { allMarkdownRemark } }) => {
             ),
         )}
       </S.ListWrapper>
-
+      </section>           
       <br />
+      <section>
+            <BrandsStripe></BrandsStripe>
+      </section>
 
       <LocalizedLink to={`/blog/`}>{allPosts}</LocalizedLink>
     </div>

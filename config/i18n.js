@@ -16,7 +16,7 @@ module.exports = {
     locale: `da`,
     dateFormat: `DD/MM/YYYY`,
     siteLanguage: `da`,
-    ogLanguage: `da`,
+    ogLanguage: `da_DK`,
     defaultTitle: `Gatsby Starter multilingue com CMS`,
     defaultDescription: `Exemplo de Gatsby site usando Markdown, i18n e CMS`,
   },
