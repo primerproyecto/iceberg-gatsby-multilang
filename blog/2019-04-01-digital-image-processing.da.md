@@ -1,8 +1,7 @@
 ---
 title: 'Digital billedbehandling'
 date: '2019-04-01 07:41:34'
-description: In computer science, 
-Digital billedbehandling is the use of computer algorithms to perform image processing on digital images.
+description: In computer science, Digital billedbehandling is the use of computer algorithms to perform image processing on digital images.
 category: Images
 background: '#079992'
 image: '/assets/img/01.jpg'
