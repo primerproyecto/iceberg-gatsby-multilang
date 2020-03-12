@@ -22,7 +22,6 @@ const Index = ({ data: { allMarkdownRemark } }) => {
   } = useTranslations();
 
   const postList = allMarkdownRemark.edges;
-  console.log(process.env.DB_HOS);
 
 
   return (

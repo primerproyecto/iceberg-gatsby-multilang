@@ -1,8 +1,8 @@
 {
   "menuItems": [
-    { "name": "Inicio es", "link": "/" },
+    { "name": "Inicio", "link": "/" },
     { "name": "Sobre", "link": "/sobre" },
-    { "name": "Blog", "link": "/blog" },
-    { "name": "Contato", "link": "/contacto" }
+    { "name": "Bitácora", "link": "/blog" },
+    { "name": "Contacto", "link": "/contacto" }
   ]
 }

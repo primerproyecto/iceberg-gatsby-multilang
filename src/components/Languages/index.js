@@ -11,7 +11,7 @@ const Languages = () => {
         </S.LanguageLink>
       </S.LanguageItem>
       <S.LanguageItem>
-        <S.LanguageLink to="/pt" hrefLang="pt">
+        <S.LanguageLink to="/da" hrefLang="da">
           pt-BR
         </S.LanguageLink>
       </S.LanguageItem>

@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby multiple language starter`,
+    title: `the danish wheelmaker`,
     description: `A simple but feature rich starter boilerplate for creating a multi-language Gatsby website (Internationalization / i18n) without third party plugins or packages and also focused on SEO. This starter also contains other main Gatsby configurations you might need.`,
     author: `@diogorodrigues`,
     siteUrl: `https://iceberg-gatsby-multilang.netlify.com/`,
@@ -40,6 +40,17 @@ module.exports = {
       options: {
         path: `${__dirname}/src/images`,
         name: `images`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-cloudinary',
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+
+        // This folder will be created if it doesn’t exist.
+        uploadFolder: 'gatsby-cloudinary',
       },
     },
     {

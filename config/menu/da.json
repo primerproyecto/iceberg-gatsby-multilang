@@ -1,0 +1,8 @@
+{
+  "menuItems": [
+    { "name": "initiering", "link": "/" },
+    { "name": "Oplysninger", "link": "/sobre" },
+    { "name": "Blog", "link": "/blog" },
+    { "name": "kontakt", "link": "/contato" }
+  ]
+}
