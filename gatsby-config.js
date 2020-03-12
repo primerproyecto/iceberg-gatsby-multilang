@@ -43,17 +43,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-cloudinary',
-      options: {
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
-
-        // This folder will be created if it doesn’t exist.
-        uploadFolder: 'gatsby-cloudinary',
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/blog`,
