@@ -26,10 +26,7 @@ const Header = () => {
           <Languages />
         </S.NavLanguages>
 
-        <ButtonMenu
-          handleClick={handleToggleMenu}
-          isActive={toggleMenu}
-        />
+        <ButtonMenu handleClick={handleToggleMenu}isActive={toggleMenu} /> 
         <S.NavMenu>
           <Navigation isActive={toggleMenu} handleToggleMenu={handleToggleMenu} />
         </S.NavMenu>

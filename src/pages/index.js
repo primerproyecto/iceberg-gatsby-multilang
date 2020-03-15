@@ -31,12 +31,11 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <TitlePage text={hello} />
       <p>{subline}</p>
       <hr style={{ margin: `2rem 0` }} />
+      <section>
       <h2>
         <strong>{latestPosts}</strong>
       </h2>
-
-      <br />
-    <section>
+    
       <S.ListWrapper>
         {postList.map(
           ({
@@ -67,13 +66,14 @@ const Index = ({ data: { allMarkdownRemark } }) => {
             ),
         )}
       </S.ListWrapper>
-      </section>           
-      <br />
+      <LocalizedLink to={`/blog/`}>{allPosts}</LocalizedLink>
+      </section>          
+      
+
+      
       <section>
             <BrandsStripe></BrandsStripe>
       </section>
-
-      <LocalizedLink to={`/blog/`}>{allPosts}</LocalizedLink>
     </div>
   );
 };
