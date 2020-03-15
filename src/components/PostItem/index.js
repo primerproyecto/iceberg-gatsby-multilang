@@ -49,7 +49,7 @@ const PostItem = ({
     : false;
 
   return (
-    <S.PostItemLink to={slug}>
+    <S.PostItemLink to={slug} data-sal="slide-up">
       <S.PostItemWrapper>
         {postImg && (
           <S.PostItemImg
