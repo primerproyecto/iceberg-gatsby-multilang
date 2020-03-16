@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-export const SiteContent = styled.section`
+export const SiteContent = styled.main`
   display: flex;
   flex: 1;
   width: 100%;

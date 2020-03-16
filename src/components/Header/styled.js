@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import media from 'styled-media-query';
 import LocalizedLink from '../LocalizedLink';
 
-export const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.header`
   background-color: var(--bg-light);
   ${media.greaterThan('large')`
     margin-bottom: var(--space);

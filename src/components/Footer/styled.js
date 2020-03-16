@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
   margin-top: 3rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 `;
