@@ -1,8 +1,8 @@
 backend:
     name: github
     repo: primerproyecto/iceberg-gatsby-multilang
-    branch: master
-    site_domain: https://iceberg-gatsby-multilang.netlify.com/
+    branch: develop
+    site_domain: https://zen-minsky-9250e3.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: 'static/assets/img'
