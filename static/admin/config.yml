@@ -1,5 +1,5 @@
 backend:
-    name: github
+    name: git-gateway
     repo: primerproyecto/iceberg-gatsby-multilang
     branch: master
     site_domain: https://zen-minsky-9250e3.netlify.com
