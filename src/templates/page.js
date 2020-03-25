@@ -2,12 +2,15 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
+import BrandSprite from '../components/BrandsStripe';
 
 import * as S from '../components/Content/styled';
 
 const Page = props => {
   const post = props.data.markdownRemark;
-
+  console.log(post);
+  const isContact = post.frontmatter.title == 'Contact' || post.frontmatter.title == 'Contacto' ? true : false;
+  
   return (
     <>
       <SEO
@@ -17,7 +20,25 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+      <form name="contact" netlify="true">
+        <p>
+          <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      <div>
+      { isContact ? `<BrandSprite />` : `<div>aqui va el formulario</div>`}
+      </div>
+
+        <div dangerouslySetInnerHTML={{ __html: post.html }}>
+        
+        
+        </div>
       </S.Content>
     </>
   );
