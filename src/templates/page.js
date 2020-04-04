@@ -20,7 +20,8 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
-      { isContact ? <FormContacto /> : <div dangerouslySetInnerHTML={{ __html: post.html }} />}
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        { isContact ? <FormContacto /> :  ``}
       </S.Content>
     </>
   );

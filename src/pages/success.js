@@ -1,7 +1,6 @@
 import React from 'react';
 
 import useTranslations from '../components/useTranslations';
-
 const Success = () => {
     const {
         contactForm_success
@@ -9,7 +8,7 @@ const Success = () => {
 
     return (
         <>
-            <h1>{contactForm_success}</h1>
+            <h1> {contactForm_success}</h1>
         </>
     )
 };
