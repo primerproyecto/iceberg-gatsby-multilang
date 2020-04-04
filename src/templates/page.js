@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
-import BrandSprite from '../components/BrandsStripe';
+import FormContacto from '../components/FormContact';
 
 import * as S from '../components/Content/styled';
 
@@ -20,23 +20,9 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
-      <form name="contact" netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
-        <p>
-          <label>Name <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Email <input type="email" name="email" /></label>
-        </p>
-        <div>
-          <div data-netlify-recaptcha="true"></div>
-        </div>
-        
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      
       <div>
-      { isContact ? <BrandSprite /> : `<div>aqui va el formulario</div>`}
+      { isContact ? <FormContacto /> : `<div>aqui va el formulario</div>`}
       </div>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }}>
