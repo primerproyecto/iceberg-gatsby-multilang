@@ -17,5 +17,11 @@
   "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
   "seeMorePWA": "See more PWA here",
   "maintainedBy": "Maintained by",
-  "contributeMessage": "You can always contribute with the project on"
+  "contributeMessage": "You can always contribute with the project on",
+
+  "contactForm_name": "Name",
+  "contactForm_email": "Email",
+  "contactForm_message": "Message",
+  "contactForm_send": "Send",
+  "contactForm_success": "Your message was sent successfully"
 }

@@ -54,6 +54,13 @@ const query = graphql`
             seeMorePWA
             maintainedBy
             contributeMessage
+
+            contactForm_name
+            contactForm_email
+            contactForm_message
+            contactForm_send
+            contactForm_success
+            
           }
         }
       }

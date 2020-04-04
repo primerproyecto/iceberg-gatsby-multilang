@@ -20,15 +20,7 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
-      
-      <div>
-      { isContact ? <FormContacto /> : `<div>aqui va el formulario</div>`}
-      </div>
-
-        <div dangerouslySetInnerHTML={{ __html: post.html }}>
-        
-        
-        </div>
+      { isContact ? <FormContacto /> : <div dangerouslySetInnerHTML={{ __html: post.html }} />}
       </S.Content>
     </>
   );

@@ -1,48 +1,36 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from 'gatsby-image';
+import useTranslations from '../useTranslations';
 
 import * as S from './styled';
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    query FormQuery {
-      allFile(filter: {relativeDirectory: {eq: "brands"}}){
-        edges {
-          node {
-            id
-            childImageSharp {
-              fluid(maxWidth: 250) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+    const {
+        contactForm_name,
+        contactForm_email,
+        contactForm_message,
+        contactForm_send
+      } = useTranslations();
   return (
-    <div>
       <S.FormWrapper>
-        <form name="contactPage" netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+        <form action="/success" name="contactPage" netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
          <p>
-           <label>Name <input type="text" name="name" /></label>
+           <label>{contactForm_name}<input type="text" name="name" /></label>
          </p>
          <p>
-           <label>Email <input type="email" name="email" /></label>
+           <label>{contactForm_email}<input type="email" name="email" /></label>
          </p>
          <p>
-            <label>Message: <textarea name="message"></textarea></label>
+            <label>{contactForm_message}: <textarea name="message"></textarea></label>
         </p>
          <div>
            <div data-netlify-recaptcha="true"></div>
          </div>
          
          <p>
-           <button type="submit">Send</button>
+           <button type="submit">{contactForm_send}</button>
          </p>
        </form>
         </S.FormWrapper>
-    </div>
   )
 }
