@@ -20,7 +20,7 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
-      <form name="contact" netlify="true" data-netlify-recaptcha="true">
+      <form name="contact" netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
         <p>
           <label>Name <input type="text" name="name" /></label>
         </p>
