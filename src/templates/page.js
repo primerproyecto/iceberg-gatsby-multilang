@@ -20,19 +20,23 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
-      <form name="contact" netlify="true">
+      <form name="contact" netlify="true" data-netlify-recaptcha="true">
         <p>
           <label>Name <input type="text" name="name" /></label>
         </p>
         <p>
           <label>Email <input type="email" name="email" /></label>
         </p>
+        <div>
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+        
         <p>
           <button type="submit">Send</button>
         </p>
       </form>
       <div>
-      { isContact ? `<BrandSprite />` : `<div>aqui va el formulario</div>`}
+      { isContact ? <BrandSprite /> : `<div>aqui va el formulario</div>`}
       </div>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }}>
