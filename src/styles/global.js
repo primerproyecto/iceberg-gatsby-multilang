@@ -76,6 +76,23 @@ const GlobalStyles = createGlobalStyle`
     color: var(--primaryColor)
   }
 
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  input, textarea, button {
+    font-size: 1.5rem;
+    padding: var(--space-sm);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--secondary-color);
+  }
+  input[type=submit], button {
+    width: 100%;
+    ${media.greaterThan('medium')`
+      width: auto;
+    `}
+  }
+
   :root {
     --gray-extra-light: #eaeaea;
     --gray-light: #747d8d;
@@ -93,6 +110,7 @@ const GlobalStyles = createGlobalStyle`
 
     --border-light: var(--gray-light);
     --border-dark: var(--gray-dark);
+    --border-radius: 4px;
 
     --link-color: var(--primary-color);
     --link-color-hover: var(--thirdy-color);
