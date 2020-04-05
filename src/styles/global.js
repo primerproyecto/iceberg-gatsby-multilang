@@ -75,6 +75,11 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: var(--primaryColor)
   }
+  .instagramGrid {
+    display: grid;
+    grid-gap: var(--space-sm);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 
   :root {
     --gray-extra-light: #eaeaea;

@@ -5,7 +5,7 @@ export const ListWrapper = styled.div`
   margin-bottom: 20px;
   ${media.greaterThan('small')`
         display: grid;
-        grid-gap: 20px;
+        grid-gap: var(--space-sm);
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     `}
   ${media.greaterThan('large')`

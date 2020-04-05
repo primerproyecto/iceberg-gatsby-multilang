@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import PostItem from '../components/PostItem';
 import TitlePage from '../components/TitlePage';
@@ -11,7 +12,7 @@ import BrandsStripe from '../components/BrandsStripe';
 import * as S from '../components/ListWrapper/styled';
 
 
-const Index = ({ data: { allMarkdownRemark } }) => {
+const Index = ({ data: { allMarkdownRemark, allInstaNode } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
   const {
@@ -23,6 +24,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
   } = useTranslations();
 
   const postList = allMarkdownRemark.edges;
+  console.log(allInstaNode);
 
 
   return (
@@ -74,6 +76,13 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <section>
             <BrandsStripe></BrandsStripe>
       </section>
+      <section className="instagramGrid">
+            {allInstaNode.edges.map((imagen, index) => {
+              return (
+                <Img key={imagen.node.id} fluid={imagen.node.localFile.childImageSharp.fluid} alt='' />
+              )
+            })}
+      </section>
     </div>
   );
 };
@@ -105,6 +114,20 @@ export const query = graphql`
           fields {
             locale
             slug
+          }
+        }
+      }
+    }
+    allInstaNode(limit: 8) {
+      edges {
+        node {
+          id
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 250, maxHeight: 250) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
