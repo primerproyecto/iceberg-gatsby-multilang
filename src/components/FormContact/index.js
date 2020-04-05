@@ -1,7 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import useTranslations from '../useTranslations';
-import Botonales from '../Button';
 import * as S from './styled';
 
 export default () => {
@@ -28,8 +27,6 @@ export default () => {
             </S.FormWrapperItems>
           <S.FormWrapperItems className="form-boton">
            <button type="submit">{contactForm_send}</button>
-           <Botonales type="submit" />
-           <Botonales type="submit" primary text="Send" />
           </S.FormWrapperItems>
         </S.FormWrapperForm>
       </S.FormWrapper>
