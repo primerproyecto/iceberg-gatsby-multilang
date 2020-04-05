@@ -2,12 +2,15 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
+import FormContacto from '../components/FormContact';
 
 import * as S from '../components/Content/styled';
 
 const Page = props => {
   const post = props.data.markdownRemark;
-
+  console.log(post);
+  const isContact = post.frontmatter.title == 'Contact' || post.frontmatter.title == 'Contacto' ? true : false;
+  
   return (
     <>
       <SEO
@@ -17,7 +20,8 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        { isContact ? <FormContacto /> :  ``}
       </S.Content>
     </>
   );

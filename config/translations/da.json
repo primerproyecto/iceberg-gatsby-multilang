@@ -17,5 +17,11 @@
   "aboutProject": "Iceberg Gatsby é um PWA, salve o site em sua homescreen para vê-lo offline.",
   "seeMorePWA": "Leia mais sobre PWA aqui en danes",
   "maintainedBy": "Projeto mantido por",
-  "contributeMessage": "Você sempre poderá contribuir com esse projeto no"
+  "contributeMessage": "Você sempre poderá contribuir com esse projeto no",
+
+  "contactForm_name": "Name en danes",
+  "contactForm_email": "Email en danes",
+  "contactForm_message": "Message en danes",
+  "contactForm_send": "Enviar en danés",
+  "contactForm_success": "Mensaje enviado con éxito en danés"
 }
