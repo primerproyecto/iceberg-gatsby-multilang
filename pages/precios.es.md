@@ -1,5 +1,5 @@
 ---
-title: precios
+title: Precios
 date: '2020-04-07 08:58:11'
 page: true
 ---
