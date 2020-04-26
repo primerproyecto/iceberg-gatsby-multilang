@@ -2,7 +2,7 @@
   "menuItems": [
     { "name": "Inicio", "link": "/" },
     { "name": "Sobre", "link": "/sobre" },
-    { "name": "Bitácora", "link": "/blog" },
+    { "name": "Precios ", "link": "/precios" },
     { "name": "Contacto", "link": "/contacto" }
   ]
 }

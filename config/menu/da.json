@@ -2,7 +2,7 @@
   "menuItems": [
     { "name": "initiering", "link": "/" },
     { "name": "Oplysninger", "link": "/about" },
-    { "name": "Blog", "link": "/blog" },
+    { "name": "Priser", "link": "/priser" },
     { "name": "kontakt", "link": "/contact" }
   ]
 }

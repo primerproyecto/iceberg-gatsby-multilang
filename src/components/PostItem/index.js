@@ -35,10 +35,10 @@ const PostItem = ({
       }
     `,
   );
-
-  const postImgCover = listImages.edges.find(img => {
-    return img.node.childImageSharp.fluid.src.includes('cover');
-  });
+  // ejemplo de busqueda de una imagen concreta
+  //const postImgCover = listImages.edges.find(img => {
+  //  return img.node.childImageSharp.fluid.src.includes('cover');
+  //});
 
   const imgName = image ? image.split('/')[3] : false;
 
